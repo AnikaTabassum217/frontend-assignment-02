@@ -43,3 +43,27 @@
               </div>
         </div>
 ================================================
+
+ <div class="story-container">
+       <div class="story-content">
+        <div>
+          <h1 class="story-title">Our Stories</h1>
+        </div>
+
+        <div class="story-card-container">
+                  <h1>Anika keep going</h1>
+        </div>
+       </div>
+     </div>
+
+===========================
+.story-container{
+    background-image: url('../assets/bg.png');
+    width: 100%;
+    /* background:linear-gradient(#FFFFFF 20%, 30%, #dcc6a0 50%); */
+    border: 2px solid rgb(68, 0, 255);
+}
+.story-content{
+    max-width: 1440px;
+    margin: 0px auto;
+}

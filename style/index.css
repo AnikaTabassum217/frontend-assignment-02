@@ -9,12 +9,9 @@
 .display-flex{
     display: flex; 
 }
-
-
 header{
     max-width: 1440px;
     margin: 0px auto;
-    
 }
 
 .navbar{
@@ -26,14 +23,11 @@ header{
 .nav-logo{
     align-items: center;
     gap: 11px;
-    /* background-color: red; */
-    
 }
 .logo{
     /* height: 10vh;
     width: 4.5vw; */
 
-   
     height: auto;
     width: 100%;
 
@@ -64,7 +58,6 @@ header{
 .nav-item{
     font-size: 1.25rem;
     font-weight: 600;
-    /* cursor: pointer; */
 }
 .black-color{
     color: #111111;
@@ -86,7 +79,6 @@ header{
     border-radius: 12px;
     border: none;
     color: #FFFFFF;
-    
     cursor: pointer;
 }
 .contact-btn{
@@ -99,7 +91,6 @@ header{
     border: 0.5px solid #FEA301;
     width: 100%;
     display: none;
-  
 }
 .banner-container{
     max-width: 1440px;
@@ -112,7 +103,6 @@ header{
    display: flex;
    flex-direction: column;
    gap:24px
-    
 }
 .banner-title{
     font-weight: 700;
@@ -120,7 +110,7 @@ header{
 }
 .banner-subtitle{
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
 }
 .banner-btn{
     background-color: #000000;
@@ -131,13 +121,16 @@ header{
     background-image: url('../assets/bg.png');
     width: 100%;
     border: 2px solid red;
-    
 }
+
 .curriculum-content{
     max-width: 1440px;
     margin: 0 auto;
 }
-.curriculum-title{
+.curriculum-title
+
+
+{
     margin-top: 60px;
     font-weight: 700;
     font-size: 2.875rem;
@@ -147,35 +140,47 @@ header{
 .curriculum-card-container{
     margin-top: 80px;
     justify-content: center;
-    
     gap: 28px;
 }
 .curriculum-card-one{
-    /* background: linear-gradient(0deg, white, #DEF5FF 90%) ; */
-    /* background:linear-gradient(red 10%, 30%, blue 90%); */
     background:linear-gradient(#DEF5FF 20%, 30%, white 50%);
+    border-radius: 18px;
+    padding: 52px 40px;
+    border: 1px solid #DEF5FF;
+    box-shadow: 0px 0px 28px .94px rgba(223, 210, 210, 0.05) ;
+}
+.curriculum-read-more-one{
+    color: #64C8FF;
 }
 .curriculum-card-two{
     background:linear-gradient(#FFF4DC 20%, 30%, white 50%);
+    border-radius: 18px;
+    padding: 52px 40px;
+    border: 1px solid #FFF4DC;
+    box-shadow: 0px 0px 28px .94px rgba(223, 210, 210, 0.05) ;
+}
+.curriculum-read-more-two{
+    color: #F0AA00;
 }
 .curriculum-card-three{
     background:linear-gradient(#F2E8FF 20%, 30%, white 50%);
+    border-radius: 18px;
+    padding: 52px 40px;
+    border: 1px solid #F2E8FF;
+    box-shadow: 0px 0px 28px .94px rgba(223, 210, 210, 0.05) ;
+   
+}
+.curriculum-read-more-three{
+    color: #8700FF;
 }
 .curriculum-card-content{
     flex-direction: column;
-    border: 6px solid green;
-    
-    border-radius: 18px;
     gap: 20px;
-    
 }
-.curriculum-card{
-    /* background-color: #ceccd6; */
-    padding: 52px 40px;
+/* .curriculum-card{
     border: 2px solid red;
-    /* box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.15); */
     box-shadow: 0px 0px 28px .94px rgba(223, 210, 210, 0.05) ;
-}
+} */
 .curriculum-img-portion{
     display: flex;
     justify-content: center;
@@ -184,8 +189,6 @@ header{
 .curriculum-img{
     width: 137px;
     height: 137px;
-    /* justify-content: center; */
-    
 }
 
 .curriculum-card-title,
@@ -199,27 +202,46 @@ header{
     color: #202020;
 }
 .curriculum-description{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     color: #808080;
 }
 .curriculum-read-more{
     font-weight: 700;
     font-size: 1rem;
-    color: #64C8FF;
     cursor: pointer;
 }
-
-
+.arrow-background{
+    background-color: #FEA301;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow-background:hover{
+    background-color: #d99012;
+    scale: 0.95;
+    transition-duration: 0.4s;
+}
+.arrow-btn{
+    margin-top: 80px;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5rem
+}
+.arrow-icon{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
 @media screen and (max-width:576px) {
     .navbar{
         padding: 12px 16px;
-        
     }
    .nav-item{
     display: none;
    }
-   
    .logo-title{
     display: none;
    }
@@ -239,11 +261,50 @@ header{
 .banner-content{
     text-align: center;
 }
+.banner-title{
+    font-size: 2rem;
+}
+.banner-subtitle{
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.banner-btn{
+    font-size: 1rem;
+}
+.curriculum-title{
+    margin-top: 40px;
+    font-size: 1.625rem;
+}
 .enroll-btn{
     display: flex;
     justify-content: center;
 }
 .curriculum-card-container{
+    margin-top: 20px;
     flex-direction: column;
+    gap: 12px;
+}
+.curriculum-card-title{
+    font-size: 1rem;
+}
+.curriculum-description{
+    font-size: 0.625rem;
+}
+.curriculum-read-more{
+    font-size: 0.625rem;
+}
+.curriculum-card-content{
+    flex-direction: column;
+    gap: 10px;
+}
+.curriculum-card-one,
+.curriculum-card-two,
+.curriculum-card-three{
+    border-radius: 12px;
+    padding: 32px 20px;
+    /* border: 2px solid blueviolet; */
+}
+.arrow-btn{
+    display: none;
 }
 }
