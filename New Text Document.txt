@@ -1,0 +1,45 @@
+.hello{
+    background-image: url('../assets/bg.png');
+    width: 100%;
+    border: 2px solid red;
+}
+.hi{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+================
+<div class="hello">
+      <div class="hi">
+        <h1>Hello anika <br> how do yo do now? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          necessitatibus autem? Ab ullam quo delectus nesciunt exercitationem ratione explicabo harum autem totam quam
+          incidunt esse sit ipsum, laudantium repellendus blanditiis. </h1>
+      </div>
+    </div>
+
+===========================================
+ <div class="">
+              <div class=" curriculum-card">
+
+                 <div class="hh">
+                 <div class="jj">
+                  <div style="background-color: red;"><img src="./assets/kinder.png" alt="Image of Curriculum">
+                    <div>Kinder (3-6) Years</div>
+                    <div>Cum sociis natoque penatibus et magnis <br>
+                      dis parturient montes, nascetur ridiculus <br>
+                      mu sdis parturient</div>
+                    <div>Read More</div></div>
+                 </div>
+  
+                    <div style="background-color: greenyellow;"><img src="./assets/kinder.png" alt="Image of Curriculum">
+                      <div>Kinder (3-6) Years</div>
+                      <div>Cum sociis natoque penatibus et magnis <br>
+                        dis parturient montes, nascetur ridiculus <br>
+                        mu sdis parturient</div>
+                      <div>Read More</div></div>
+                 </div>
+
+              </div>
+        </div>
+================================================
