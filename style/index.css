@@ -123,14 +123,12 @@ header{
     border: 2px solid red;
 }
 
-.curriculum-content{
+.curriculum-content,.story-content{
     max-width: 1440px;
     margin: 0 auto;
 }
-.curriculum-title
-
-
-{
+.curriculum-title,
+.story-title{
     margin-top: 60px;
     font-weight: 700;
     font-size: 2.875rem;
@@ -217,6 +215,7 @@ header{
     height: 60px;
     border-radius: 50%;
     cursor: pointer;
+    margin-bottom: 60px;
 }
 .arrow-background:hover{
     background-color: #d99012;
@@ -234,6 +233,56 @@ header{
     position: relative;
     top: 20px;
     left: 20px;
+}
+.story-content{
+
+}
+.story-card{
+    background-color: rgb(49, 199, 149);
+}
+.story-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.story-card-1{
+    grid-row: span 2;
+    
+}
+.story-card-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+   
+}
+.story-card-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+img{
+    height:100%;
+    width: 100%;
+}
+@media screen and (max-width:576px) {
+    /* .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+}
+.card-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+   
+}
+.card-3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    
+} */
 }
 @media screen and (max-width:576px) {
     .navbar{
@@ -273,7 +322,7 @@ header{
 }
 .curriculum-title{
     margin-top: 40px;
-    font-size: 1.625rem;
+    font-size: 1.625rem; 
 }
 .enroll-btn{
     display: flex;
