@@ -570,7 +570,9 @@ footer {
         font-size: 1rem;
         margin-bottom: 40px;
     }
-
+    .footer-container {
+        padding:  30px;
+    }
     .footer-content {
         flex-direction: column;
         gap: 30px;
