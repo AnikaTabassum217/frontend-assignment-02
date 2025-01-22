@@ -115,7 +115,7 @@ header{
 .banner-btn{
     background-color: #000000;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
 }
 .curriculum-container{
     background-image: url('../assets/bg.png');
@@ -126,6 +126,14 @@ header{
 .curriculum-content,.story-content{
     max-width: 1440px;
     margin: 0 auto;
+    
+}
+.story-container{
+background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(254, 241, 217, 0.73)),
+url('../assets/bg.png');
+width: 100%;
+background-size: cover;
 }
 .curriculum-title,
 .story-title{
@@ -277,30 +285,32 @@ img{
 
 .story-card-1 {
     grid-row: span 2;
-
+    border: 1px solid blue;
+    border-radius: 16px;
+    background-color: white;
 }
 
 .story-card-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-
+    background-color: greenyellow;
 }
-
 .story-card-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  
 }
 .story-img {
     height: 50%;
     width: 100%;
+    border-radius: 16px 16px 0px 0px;
 }
 .story-card-info{
  padding-left: 35px;
 }
 .story-card-title{
-    /* margin-top: 33px; */
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -311,8 +321,6 @@ img{
     color: #666666;
 }
 .story-card-date{
-    /* width: 174px;
-    height: 47px; */
     padding: 15px 18px;
     border-radius: 47px;
     border: none;
@@ -320,7 +328,6 @@ img{
     color: #FFFFFF;
     position: relative;
     top: -25px;
-    /* left: 38px; */
 }
 .story-sub-btn{
     position: relative;
@@ -332,30 +339,84 @@ img{
     color: white;
     font-weight: 700;
     font-size: 1rem;
+    cursor: pointer;
 }
 .story-subtitle{
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 700;
 }
-@media screen and (max-width:576px) {
-    /* .card-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap:10px;
+.story-sub-btn-blue{
+    background-color: #5D58F0;
 }
-.card-2{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 10px;
-   
+.story-view-btn{
+    justify-content: center;
 }
-.card-3{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+.view-btn{
+    margin-top: 80px;
+    background-color: #000000;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 60px;
+}
+footer{
+    width: 100%;
+    background-color: #01ACFD;
+}
+.footer-container{
+    padding: 123px 228px 174px 140px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.footer-about{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 32px;
+}
+.footer-about > a{
+    text-decoration: none;
+}
+.footer-home,.footer-about-link,.footer-facility,.footer-admission{
+    color: white; 
+    font-size:1.25rem;
+}
+.foot-link{
+    margin-top: 10px;
+}
+.footer-title{
+    color: white;
+    font-weight: 700;
+    font-size: 2.625rem;
+}
+.footer-info{
+    align-items: center;
+}
+.footer-description{
+    color: white;
+    margin-top: 35px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.keep-in-touch{
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: white;
+    margin-bottom: 32px;
+}
+.keep-img{
+    display: flex;
     gap: 10px;
-    
-} */
+}
+.keep-img > img{
+    cursor: pointer;
+}
+.footer-logo{
+    width: 70px;
+    height: 70px;
 }
 @media screen and (max-width:576px) {
     .navbar{
@@ -424,7 +485,6 @@ img{
 .curriculum-card-three{
     border-radius: 12px;
     padding: 32px 20px;
-    /* border: 2px solid blueviolet; */
 }
 .arrow-btn{
     display: none;
@@ -445,5 +505,26 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+}
+.footer-content{
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-title{
+    font-size: 2.1875rem;
+}
+.footer-description{
+font-size: 1rem;
+}
+.footer-about{
+    font-size: 1.25rem;
+}
+.footer-home,.footer-about-link,.footer-facility,.footer-admission{
+    color: white; 
+    font-size: 1rem;
+}
+.keep-in-touch{
+    font-weight: 700;
+    font-size: 1.375rem;
 }
 }
