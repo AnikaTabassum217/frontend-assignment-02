@@ -237,8 +237,8 @@ header{
 .story-content{
 
 }
-.story-card{
-    background-color: rgb(49, 199, 149);
+/* .story-card{
+    background-color: rgb(49, 56, 199);
 }
 .story-container{
     display: grid;
@@ -264,6 +264,79 @@ header{
 img{
     height:100%;
     width: 100%;
+} */
+.card {
+    /* background-color: rgb(148, 154, 231); */
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.story-card-1 {
+    grid-row: span 2;
+
+}
+
+.story-card-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.story-card-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.story-img {
+    height: 50%;
+    width: 100%;
+}
+.story-card-info{
+ padding-left: 35px;
+}
+.story-card-title{
+    /* margin-top: 33px; */
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.story-card-description{
+    margin-top: 47px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #666666;
+}
+.story-card-date{
+    /* width: 174px;
+    height: 47px; */
+    padding: 15px 18px;
+    border-radius: 47px;
+    border: none;
+    background-color: #3CD8E8;
+    color: #FFFFFF;
+    position: relative;
+    top: -25px;
+    /* left: 38px; */
+}
+.story-sub-btn{
+    position: relative;
+    top: -20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 47px;
+    background-color: #95B226;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.story-subtitle{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 @media screen and (max-width:576px) {
     /* .card-container{
@@ -355,5 +428,22 @@ img{
 }
 .arrow-btn{
     display: none;
+}
+img {
+    height: 50%;
+    width: 100%;
+}
+.story-card-1 {
+    display: none;
+}
+.story-card-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.story-card-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 }
